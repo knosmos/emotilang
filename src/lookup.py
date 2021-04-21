@@ -64,6 +64,10 @@ com_replaces = {
     "🧪":"VAR3",
     "🗃️":"VAR4",
     "🛍️":"VAR5",
+    "🛒":"VAR6",
+    "🧴":"VAR7",
+    "🧺":"VAR8",
+    "🛢️":"VAR9",
     # ARITHMETIC
     "➕":"ADD",
     "➖":"SUBTRACT",
@@ -74,6 +78,8 @@ com_replaces = {
     "⚖️":"EQUALS",
     "🧲":"GREATER",
     "⛔":"NOT",
+    "🤝":"AND",
+    "👐":"OR",
     # I/O
     "💬":"ASK",
     "🖨️":"PRINT",
@@ -82,5 +88,7 @@ com_replaces = {
     "♾️":"FOREVER",
     "🏁":"START",
     "🛑":"STOP",
-    "✋":"BREAK"
+    "✋":"BREAK",
+
+    "🖖":"VULCAN"
 }

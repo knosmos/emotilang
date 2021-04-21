@@ -46,42 +46,26 @@
             <p>FizzBuzz</p>
             <pre>
 ♾️
-📦✏️💯🕐💯
+📦✏️💯🕐💯 <- initialize num
 🏁
+    (is num divisible by 3?)
     ⚗️✏️📦🍇💯🕒💯
     ⚗️✏️⚗️⚖️💯🕛💯
+    (is num divisible by 5?)
     🗃️✏️📦🍇💯🕔💯
     🗃️✏️🗃️⚖️💯🕛💯
-    🤔⚗️
-    🏁
-        🤔⛔🗃️
-        🏁
-            🖨️📜🎏🕯️⚡️⚡️📜
-        🛑
-        🤔🗃️
-        🏁
-            🖨️📜🎏🕯️⚡️⚡️🅱️⛎⚡️⚡️📜
-        🛑
-    🛑
+    🧪✏️📜📜 <- initialize answer variable
+	🤔⚗️
+        🧪✏️🧪➕📜🎏🕯️⚡️⚡️📜 <- add "fizz" to ans if num is divisible by 3
     🤔🗃️
-    🏁
-        🤔⛔⚗️
-        🏁
-            🖨️📜🅱️⛎⚡️⚡️📜
-        🛑
-    🛑
-    🤔⛔⚗️
-    🏁
-        🤔⛔🗃️
-        🏁
-            🖨️📦
-        🛑
-    🛑
-    📦✏️📦➕💯🕐💯
-    🤔📦🧲💯🕐🕛🕛💯
-    🏁
+        🧪✏️🧪➕📜🅱️⛎⚡️⚡️📜 <- add "buzz" to ans if num is divisible by 5
+    🛍️✏️⚗️👐🗃️
+    🤔⛔🛍️ <- if num isn't divisible by 3 or 5, set ans to num 
+        🧪✏️📦
+    🖨️🧪
+    📦✏️📦➕💯🕐💯 <- increment num
+    🤔📦🧲💯🕐🕛🕛💯 <- stop loop once we reach 100
         ✋
-    🛑
 🛑
             </pre>
             
@@ -174,8 +158,11 @@
             <p>To convert from an integer to a string, use the ✉️ function:</p>
             <pre>✉️💯🕐🕑💯 returns 📜🕐🕑📜</pre>
 
+            <h3>COMMENTS</h3>
+            <p>All non-emoji characters are ignored by the interpreter and thus can be used for comments.</p>
+
             <h3>VARIABLES</h3>
-            <p>The valid variable names are 📦,🏺,⚗️,🧪,🗃️, and 🛍️ (these are all emoji of containers). Assignment is done with the ✏️ operator. The following code creates a variable with a value of 1337:</p>
+            <p>The valid variable names are 📦,🏺,⚗️,🧪,🗃️,🛒,🧴,🧺,🛢️ and 🛍️ (these are all emoji of containers). Assignment is done with the ✏️ operator. The following code creates a variable with a value of 1337:</p>
             <pre>📦✏️💯🕐🕒🕒🕖💯</pre>
             
             <h3>ARITHMETIC</h3>

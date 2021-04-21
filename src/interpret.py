@@ -24,6 +24,11 @@ class Operations():
         return args[0] == args[1]
     def greater(self,args):
         return args[0] > args[1]
+    # AND/OR
+    def compAnd(self,args):
+        return args[0] and args[1]
+    def compOr(self,args):
+        return args[0] or args[1]
     def negation(self,args):
         return not args[0]
     # I/O
@@ -31,6 +36,9 @@ class Operations():
         print(args[0])
     def ask(self,args):
         return input(args[0])
+    # Live long and prosper
+    def vulcan(self,args):
+        print("🖖 live long and prosper, and may emotilang light your journey to greatness 🖖")
 
 ops = Operations()
 commands = {
@@ -46,10 +54,15 @@ commands = {
     # Comparison
     "EQUALS"  :[ops.equals,[-1,1]],
     "GREATER" :[ops.greater,[-1,1]],
+    # AND/OR
+    "AND"     :[ops.compAnd,[-1,1]],
+    "OR"      :[ops.compOr,[-1,1]],
     "NOT"     :[ops.negation,[1]],
     # I/O
     "PRINT"   :[ops.write,[1]],
-    "ASK"     :[ops.ask,[1]]
+    "ASK"     :[ops.ask,[1]],
+    # Live long and prosper
+    "VULCAN"  :[ops.vulcan,[]]
 }
 
 def evaluate(exp):
@@ -72,7 +85,8 @@ def substitute(variables,exp):
 
 def run(lines):
     stack = []
-    variables = [0,0,0,0,0,0]
+    num_vars = 10
+    variables = [0]*num_vars
     line_num = 0
     while True:
         #print("executing line",line_num,"stack status",stack)
@@ -93,17 +107,21 @@ def run(lines):
             statement_value = evaluate(substitute(variables,lines[line_num][1:]))
             # If it's true, add -1 to stack (for stop command later) and continue execution
             if statement_value:
-                stack.append(-1)
+                if lines[line_num+1][0] == "START":
+                    stack.append(-1)
             # If it's not true, move down the lines until we react the stop command
             else:
-                line_num += 1
-                num_stops = 1
-                while num_stops > 0:
+                if lines[line_num+1]: # if this was a one-line if statement, then we just add 1 to line_num.
                     line_num += 1
-                    if len(lines[line_num]) > 0 and lines[line_num][0] == "STOP":
-                        num_stops -= 1
-                    if len(lines[line_num]) > 0 and lines[line_num][0] == "START":
-                        num_stops += 1
+                else:
+                    line_num += 1
+                    num_stops = 1
+                    while num_stops > 0:
+                        line_num += 1
+                        if len(lines[line_num]) > 0 and lines[line_num][0] == "STOP":
+                            num_stops -= 1
+                        if len(lines[line_num]) > 0 and lines[line_num][0] == "START":
+                            num_stops += 1
 
         # BREAK STATEMENTS
         elif len(lines[line_num]) >= 1 and lines[line_num][0] == "BREAK":
