@@ -16,7 +16,9 @@ class Operations():
     def multiply(self,args):
         return args[0]*args[1]
     def divide(self,args):
-        return round(args[0]/args[1])
+        return args[0]//args[1]
+    def modulo(self,args):
+        return args[0]%args[1]
     # COMPARISON
     def equals(self,args):
         return args[0] == args[1]
@@ -40,6 +42,7 @@ commands = {
     "SUBTRACT":[ops.subtract,[-1,1]],
     "MULTIPLY":[ops.multiply,[-1,1]],
     "DIVIDE"  :[ops.divide,[-1,1]],
+    "MODULO"  :[ops.modulo,[-1,1]],
     # Comparison
     "EQUALS"  :[ops.equals,[-1,1]],
     "GREATER" :[ops.greater,[-1,1]],

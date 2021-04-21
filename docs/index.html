@@ -12,9 +12,9 @@
             <a><img id=logo src=logo.png></a>
             <div id=links>
                 <a href="#intro">Introduction</a>
+                <a href="#install">Installation</a>
                 <a href="#ex">Examples</a>
                 <a href="#docs">Docs</a>
-                <a href="#install">Installation</a>
             </div>
         </nav>
         <a id=intro></a>
@@ -29,20 +29,69 @@
                 a far more intuitive 🏁 and 🛑.
                 By having every command have a physical connection, Emotilang is
                 extremely intuitive and easy to learn.
-                <a id=ex></a> <!-- bad navbar design means I need to put anchor here -->
+                <a id=install></a><!-- bad navbar design means I need to put anchor here -->
+                
             </p>
+        </div>
+        <div id=installation>
+            <h2>installation</h2>
+            <p>Download Emotilang from the <a href="https://github.com/knosmos/emotilang" target="_blank">Github Repository</a>. To run, enter <i>./emotilang.exe &ltfilename&gt</i>
+               into the command line, where <i>&ltfilename&gt</i> is the name of the emotilang file.
+               <a id=ex></a></p>
         </div>
         <div id=examples>
             <h2>examples</h2>
             <p>Hello, World</p>
             <pre>🖨️📜♓️📧👢👢🅾️🧨✨〰️🅾️®️👢↩️❗📜</pre>
+            <p>FizzBuzz</p>
+            <pre>
+♾️
+📦✏️💯🕐💯
+🏁
+    ⚗️✏️📦🍇💯🕒💯
+    ⚗️✏️⚗️⚖️💯🕛💯
+    🗃️✏️📦🍇💯🕔💯
+    🗃️✏️🗃️⚖️💯🕛💯
+    🤔⚗️
+    🏁
+        🤔⛔🗃️
+        🏁
+            🖨️📜🎏🕯️⚡️⚡️📜
+        🛑
+        🤔🗃️
+        🏁
+            🖨️📜🎏🕯️⚡️⚡️🅱️⛎⚡️⚡️📜
+        🛑
+    🛑
+    🤔🗃️
+    🏁
+        🤔⛔⚗️
+        🏁
+            🖨️📜🅱️⛎⚡️⚡️📜
+        🛑
+    🛑
+    🤔⛔⚗️
+    🏁
+        🤔⛔🗃️
+        🏁
+            🖨️📦
+        🛑
+    🛑
+    📦✏️📦➕💯🕐💯
+    🤔📦🧲💯🕐🕛🕛💯
+    🏁
+        ✋
+    🛑
+🛑
+            </pre>
+            
             <p>"How Are You" Asker (repeatedly asks "how are you" until you reply "good")</p>
             <pre>
 ♾️
 🏁
     📦✏️💬📜♓️🅾️〰️✨🅰️®️📧✨💹🅾️⛎❓✨📜
     🤔📦⚖️📜⛽️🅾️🅾️↩️📜
-	🏁
+    🏁
         ✋
     🛑
     🖨️📜〰️®️🅾️♑️⛽️✨🅰️♑️💲〰️📧®️📜
@@ -130,12 +179,13 @@
             <pre>📦✏️💯🕐🕒🕒🕖💯</pre>
             
             <h3>ARITHMETIC</h3>
-            <p>Emotilang supports addition (➕), subtraction (➖), multiplication (✖️) and division (➗). Only one operation can be done per line, because I’m too lazy to write a proper parser. Example:</p>
+            <p>Emotilang supports addition (➕), subtraction (➖), multiplication (✖️), division (➗), and modulo (🍇). Only one operation can be done per line, because I’m too lazy to write a proper parser. Example:</p>
             <pre>
 💯🕐🕛💯➕💯🕔💯 returns 15
 💯🕐🕛💯➖💯🕔💯 returns 5
 💯🕐🕛💯✖️💯🕔💯 returns 50
 💯🕐🕛💯➗💯🕔💯 returns 2
+💯🕐🕛💯🍇💯🕔💯 returns 0
             </pre>
             
             <h3>COMPARISON</h3>
@@ -181,15 +231,9 @@
     🛑
 🛑
 🖨️📜♑️🕯️©️📧✨✝️🅾️✨♓️📧🅰️®️📜
-<a id=install></a>
             </pre>
-            
         </div>
-        <div id=installation>
-            <h2>installation</h2>
-            <p>Download Emotilang from the <a href="https://github.com/knosmos/emotilang">Github Repository</a>. To run, enter <i>./emotilang.exe &ltfilename&gt</i>
-               into the command line, where <i>&ltfilename&gt</i> is the name of the emotilang file.</p>
-        </div>
+
         <div id=roadmap>
             <a id=roadmap></a>
             <h2>roadmap</h2>
@@ -200,7 +244,7 @@
             </ul>
         </div>
         <br>
-        <p style="color:#839496;">Made with ❤️ by <a href="https://github.com/knosmos">knosmos</a></p>
+        <p style="color:#839496;">Made with ❤️ by <a href="https://github.com/knosmos" target="_blank">knosmos</a></p>
         <br>
         </div>
     </body>

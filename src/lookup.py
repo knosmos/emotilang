@@ -69,6 +69,7 @@ com_replaces = {
     "➖":"SUBTRACT",
     "✖️":"MULTIPLY",
     "➗":"DIVIDE",
+    "🍇":"MODULO",
     # COMPARISON
     "⚖️":"EQUALS",
     "🧲":"GREATER",
