@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel=icon href="logo.png" type="image/png">
+        <title>Emotilang</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">        
+    </head>
+    <body>    
+        <nav>
+            <a><img id=logo src=logo.png></a>
+            <div id=links>
+                <a href="#intro">Introduction</a>
+                <a href="#ex">Examples</a>
+                <a href="#docs">Docs</a>
+                <a href="#install">Installation</a>
+            </div>
+        </nav>
+        <a id=intro></a>
+        <div id=container>
+        <img id=splash src=splash.png>
+        <div id=introduction>
+            <h2>an intuitive scripting language</h2>
+            <p>
+                Emotilang (short for "emoticon language") is a versatile scripting language where every
+                character is emoji. Because of this, Emotilang is universal. When every command is a pictogram,
+                there are no language barriers. Printing text to the command line is just 🖨️, and variable
+                assignment is done with ✏️.
+                By having every command have a physical connection, Emotilang is
+                extremely intuitive and easy to learn.
+                <a id=ex></a> <!-- bad navbar design means I need to put anchor here -->
+            </p>
+        </div>
+        <div id=examples>
+            <h2>examples</h2>
+            <p>Hello, World:</p>
+            <pre>🖨️📜♓️📧👢👢🅾️🧨✨〰️🅾️®️👢↩️❗📜</pre>
+            <p>"How Are You" Asker</p>
+            <pre>
+♾️
+🏁
+📦✏️💬📜♓️🅾️〰️✨🅰️®️📧✨💹🅾️⛎❓✨📜
+🤔📦⚖️📜⛽️🅾️🅾️↩️📜
+🏁
+    ✋
+🛑
+⚗️✏️📦⚖️📜⛽️🅾️🅾️↩️📜
+🤔⛔⚗️
+🏁
+    🖨️📜〰️®️🅾️♑️⛽️✨🅰️♑️💲〰️📧®️📜
+🛑
+🛑
+🖨️📜♑️🕯️©️📧✨✝️🅾️✨♓️📧🅰️®️📜
+            </pre>
+            <p>Fibonacci Calculator:</p>
+            <pre>
+📦✏️💯🕐💯
+🗃️✏️💯🕛💯
+🛍️✏️💬📜♓️🅾️〰️✨♏️🅰️♑️💹✨♑️⛎♏️🅱️📧®️💲❓✨📜
+🛍️✏️🧮🛍️
+🧪✏️💯🕑💯
+♾️
+🏁
+    🖨️📦
+    🗃️✏️📦➕🗃️
+    ⚗️✏️📦
+    📦✏️🗃️
+    🗃️✏️⚗️
+    🤔🧪🧲🛍️
+    🏁
+        ✋
+    🛑
+    🧪✏️🧪➕💯🕐💯
+🛑
+<a id=docs></a>
+            </pre>
+            
+        </div>
+        <div id=documentation>
+            <h2>documentation</h2>
+            <h3>DATA TYPES</h3>
+            <p>Emotilang can handle two types of data: string and integer.
+            Strings are always lowercase. Each character is represented as an emoji:
+            <table>
+                <tr>
+                    <td>a</td><td>b</td><td>c</td><td>d</td><td>e</td><td>f</td><td>g</td><td>h</td><td>i</td>
+                    <td>j</td><td>k</td><td>k</td><td>m</td>
+                </tr>
+                <tr>
+                    <td>🅰️</td><td>🅱️</td><td>©️</td><td>↩️</td><td>📧</td><td>🎏</td><td>⛽️</td><td>♓️</td><td>🕯️</td>
+                    <td>🗾</td><td>🎋</td><td>👢</td><td>♏️</td>
+                </tr>
+                <tr>
+                    <td>n</td><td>o</td><td>p</td><td>q</td><td>r</td>
+                    <td>s</td><td>t</td><td>u</td><td>v</td><td>w</td><td>x</td><td>y</td><td>z</td>
+                </tr>
+                <tr>
+                    <td>♑️</td><td>🅾️</td><td>🅿️</td><td>🧶</td><td>®️</td>
+                    <td>💲</td><td>✝️</td><td>⛎</td><td>♈️</td><td>〰️</td><td>❎</td><td>💹</td><td>⚡️</td>
+                </tr>
+                <tr>
+                    <td>space</td><td>?</td><td>!</td><td>.</td><td>,</td>
+                </tr>
+                <tr>
+                    <td>✨</td><td>❓</td><td>❗</td><td>🧿</td><td>🧨</td> 
+                </tr>
+            </table>
+            
+            <p>Strings are always enclosed with 📜 characters. For example, “hello world” is represented
+               as the string 📜♓️📧👢👢🅾️✨〰️🅾️®️👢↩️📜.
+            </p>
+            <p>Integers are written out as digits enclosed with 💯 characters, where each digit is
+               represented as a clock symbol:
+            </p>
+            <table>
+                <tr>
+                    <td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td>
+                </tr>
+                <tr>
+                    <td>🕛</td><td>🕐</td><td>🕑</td><td>🕒</td><td>🕓</td><td>🕔</td><td>🕕</td><td>🕖</td><td>🕗</td><td>🕘</td>
+                </tr>
+            </table>
+            
+            <p>The same characters are used to represent numbers inside a string.</p>
+              
+            <p>To convert from a string to an integer, use the 🧮 function:</p>
+            <pre>🧮📜🕐🕑📜 returns 💯🕐🕑💯</pre>
+            <p>To convert from an integer to a string, use the ✉️ function:</p>
+            <pre>✉️💯🕐🕑💯 returns 📜🕐🕑📜</pre>
+
+            <h3>VARIABLES</h3>
+            <p>The valid variable names are 📦,🏺,⚗️,🧪,🗃️, and 🛍️ (these are all emoji of containers). Assignment is done with the ✏️ operator. The following code creates a variable with a value of 1337:</p>
+            <pre>📦✏️💯🕐🕒🕒🕖💯</pre>
+            
+            <h3>ARITHMETIC</h3>
+            <p>Emotilang supports addition (➕), subtraction (➖), multiplication (✖️) and division (➗). Only one operation can be done per line, because I’m too lazy to write a proper parser. Example:</p>
+            <pre>
+💯🕐🕛💯➕💯🕔💯 returns 15
+💯🕐🕛💯➖💯🕔💯 returns 5
+💯🕐🕛💯✖️💯🕔💯 returns 50
+💯🕐🕛💯➗💯🕔💯 returns 2
+            </pre>
+            
+            <h3>COMPARISON</h3>
+            <p>Two values can be compared with the 🧲 (greater than), ⚖️ (equals), and ⛔ (not) operators. A comparison statement cannot contain any arithmetic operations, and only one comparison statement can be done per line for now.
+            Examples:</p>
+            <pre>
+💯🕐🕛💯🧲💯🕔💯 returns True
+💯🕐🕛💯⚖️💯🕔💯 returns False
+
+📦✏️💯🕐🕛💯🧲💯🕔💯
+⛔📦 returns False
+            </pre>
+            
+            <h3>INPUT</h3>
+            <p>Input is done via the 💬 command. For example, this code queries “how are you” and stores the result in variable ⚗️:</p>
+            <pre>⚗️✏️💬📜♓️🅾️〰️✨🅰️®️📧✨💹🅾️⛎📜</pre>
+            <p>Note that the 💬 function returns a string.</p>
+            
+            <h3>OUTPUT</h3>
+            <p>Printing to the terminal is done via the 🖨️ command. Example:</p>
+            <pre>🖨️📜♓️📧👢👢🅾️✨〰️🅾️®️👢↩️📜</pre>
+            
+            <h3>CONTROL FLOW</h3>
+            <p>Emotilang has forever loops (♾️), if commands (🤔), and break commands (✋).</p>
+            
+            <p>IF commands (🤔) cause code inside them (starting with 🏁 and ending with 🛑) to be executed if the statement after the 🤔 mark evaluates to true. For example, the following code prints “hi” if 5+4 = 9:</p>
+            <pre>
+📦✏️💯🕔💯➕💯🕓💯
+🤔📦⚖️💯🕘💯
+🏁
+    🖨️📜♓️🕯️📜
+🛑
+            </pre>
+  
+            <p>FOREVER loops (♾️) cause the content inside of them to run until program execution is manually stopped, or until a ✋ command is sent. The following code asks “how are you” repeatedly until the user answers “good”:</p>
+            <pre>
+♾️
+🏁
+    📦✏️💬📜♓️🅾️〰✨🅰️®️📧✨💹🅾️⛎📜
+    🤔📦⚖️📜⛽️🅾️🅾️↩️📜
+    🏁
+        ✋
+    🛑
+🛑
+🖨️📜♑️🕯️©️📧✨✝️🅾️✨♓️📧🅰️®️📜
+<a id=install></a>
+            </pre>
+            
+        </div>
+        <div id=installation>
+            <h2>installation</h2>
+            <p>Download Emotilang from the <a href="https://github.com/knosmos/emotilang">Github Repository</a>. To run, enter <i>emotilang.exe &ltfilename&gt</i>
+               into the command line, where &ltfilename&gt is the name of the emotilang file.</p>
+        </div>
+        <div id=roadmap>
+            <a id=roadmap></a>
+            <h2>roadmap</h2>
+            <p>Emotilang is still in the early stages of its life. Here are the current plans for the future:</p>
+            <ul>
+                <li>Convert into compiled language (when I figure out how to write a compiler)</li>
+                <li>Descriptive error messages (completely made with emoji, of course)</li>
+            </ul>
+        </div>
+        <br>
+        <p style="color:#839496;">Made with ❤️ by <a href="https://github.com/knosmos">knosmos</a></p>
+        <br>
+        </div>
+    </body>
+</html>
