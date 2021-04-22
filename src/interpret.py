@@ -111,7 +111,7 @@ def run(lines):
                     stack.append(-1)
             # If it's not true, move down the lines until we react the stop command
             else:
-                if lines[line_num+1]: # if this was a one-line if statement, then we just add 1 to line_num.
+                if lines[line_num+1][0] != "START": # if this was a one-line if statement, then we just add 1 to line_num.
                     line_num += 1
                 else:
                     line_num += 1
