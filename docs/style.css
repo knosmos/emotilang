@@ -9,6 +9,8 @@ html,body{
     padding-left:20%;
     padding-right:20%;
     padding-top:100px;
+    min-height:100%;
+    box-sizing: border-box;
 }
 @media screen and (max-width:800px){
     #container{
@@ -65,6 +67,8 @@ pre{
     border-radius:15px;
     padding:20px;
     font-size:12pt;
+    width:100%;
+    box-sizing: border-box;
 }
 td{
     min-width:30px;
@@ -83,4 +87,26 @@ tr:nth-child(even){
 li{
     color:#073642;
     font-size:15pt;
+}
+
+textarea{
+    background-color:#eee8d5;
+    border-radius:15px;
+    padding:20px;
+    font-size:14pt;
+    border:none;
+    width:100%;
+    height:300px;
+    box-sizing: border-box;
+}
+button{
+    border-radius:10px;
+    padding:10px;
+    font-size:16pt;
+    font-family:"Cairo";
+    background-color:#c7d4d4;
+    border:none;
+}
+button:hover{
+    background-color:#7abae7;
 }

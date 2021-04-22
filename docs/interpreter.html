@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel=icon href="logo.png" type="image/png">
+        <title>Emotilang Interpreter</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+        <script src=https://cdn.jsdelivr.net/npm/grapheme-splitter@1.0.4/index.min.js></script>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <nav>
+            <a href="index.html"><img id=logo src=logo.png></a>
+            <div id=links>
+                <a href="index.html#install">Install</a>
+                <a href="index.html#ex">Examples</a>
+                <a href="index.html#docs">Docs</a>
+            </div>
+        </nav>
+        <div id=container>
+            <h2>Emotilang Online Interpreter</h2>
+            <h3>write code here</h3>
+            <textarea id="code"></textarea>
+            <button onclick="interpret()">run program</button>
+            <h3>output</h3>
+            <pre id="output">[press "run" to start program]</pre>
+            <script src=js/lookup.js></script>
+            <script src=js/translate.js></script>
+            <script src=js/interpret.js></script>    
+            <script>
+                function interpret(){
+                    document.getElementById("output").innerHTML = "";
+                    let lines = translateEmoji();
+                    console.log(lines);
+                    run(lines);
+                }
+            </script>
+            <br>
+            <p style="color:#839496;">Made with ❤️ by <a href="https://github.com/knosmos" target="_blank">knosmos</a></p>
+            <br>       
+        </div>
+    </body>
+</html>
