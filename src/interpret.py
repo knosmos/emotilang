@@ -35,7 +35,7 @@ class Operations():
     def write(self,args):
         print(args[0])
     def ask(self,args):
-        return input(args[0])
+        return input(args[0]).lower()
     # Live long and prosper
     def vulcan(self,args):
         print("🖖 live long and prosper, and may emotilang light your journey to greatness 🖖")
@@ -89,7 +89,7 @@ def run(lines):
     variables = [0]*num_vars
     line_num = 0
     while True:
-        #print("executing line",line_num,"stack status",stack)
+        #print("executing line",line_num,"variables",variables)
         #evaluate(substitute(variables,["PRINT","VAR0"]))
         #print(variables)
 
