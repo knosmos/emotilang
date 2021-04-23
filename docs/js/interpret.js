@@ -22,6 +22,9 @@ class Operations{
     modulo(args){
         return ((args[0] % args[1]) + args[1]) % args[1];        
     }
+    random(args){
+        return Math.round(Math.random()*(args[1]-args[0])+args[0]);
+    }
     // COMPARISON
     equals(args){
         console.log(args[0]==args[1]);
@@ -43,7 +46,7 @@ class Operations{
     // I/O
     write(args){
         console.log(args[0]);
-        document.getElementById("output").innerHTML += args[0]+"\n";        
+        setTimeout(function(){document.getElementById("output").innerHTML += args[0]+"\n"},0);        
     }
     ask(args){
         return prompt(args[0]).toLowerCase();
@@ -61,6 +64,7 @@ commands = {
     "MULTIPLY":[ops.multiply,[-1,1]],
     "DIVIDE"  :[ops.divide,[-1,1]],
     "MODULO"  :[ops.modulo,[-1,1]],
+    "RANDOM"  :[ops.random,[1,2]],
     // Comparison
     "EQUALS"  :[ops.equals,[-1,1]],
     "GREATER" :[ops.greater,[-1,1]],

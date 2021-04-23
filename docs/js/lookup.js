@@ -67,6 +67,7 @@ com_replaces = {
     "✖️":"MULTIPLY",
     "➗":"DIVIDE",
     "🍇":"MODULO",
+    "🎲":"RANDOM",
     // COMPARISON
     "⚖️":"EQUALS",
     "🧲":"GREATER",
