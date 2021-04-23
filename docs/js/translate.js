@@ -11,7 +11,7 @@ function translateEmoji(){
         let inside_string = false;
         let inside_num = false;
         let num = 0;
-        let ascii = `abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890',./?;[]\()!@#$%^&*-+=\<>~ \t\n"`;
+        let ascii = `abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890',./?;[]\()!:@#$%^&*-+=\<>~ \t\n"`;
         let string_line = "";
         for (let char of splitter.splitGraphemes(line)){
             if (!ascii.includes(char)){
