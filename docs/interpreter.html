@@ -22,12 +22,18 @@
             <h2>Emotilang Online Interpreter</h2>
             <h3>write code here</h3>
             <textarea id="code"></textarea>
+            <div id=keyboard>
+                <div id=keyboard-tabs></div>
+                <div id=keyboard-keys></div>
+            </div>
+            <br>
             <button onclick="interpret()">run program</button>
             <h3>output</h3>
             <pre id="output">[press "run" to start program]</pre>
             <script src=js/lookup.js></script>
             <script src=js/translate.js></script>
-            <script src=js/interpret.js></script>    
+            <script src=js/interpret.js></script>
+            <script src="js/keyboard.js"></script> 
             <script>
                 function interpret(){
                     document.getElementById("output").innerHTML = "";

@@ -110,3 +110,42 @@ button{
 button:hover{
     background-color:#7abae7;
 }
+#keyboard-tabs{
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+#keyboard-keys{
+    background-color:#eee8d5;
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(50px,1fr));
+    margin-right:2px;
+    box-sizing: border-box;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.tab{
+    flex:1;
+    border-radius:0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: transparent;
+    margin-right:2px;
+}
+.tab:hover{
+    background-color: #f3ecdb;
+}
+.selected-tab{
+    background-color: #eee8d5;
+}
+.selected-tab:hover{
+    background-color: #eee8d5;
+}
+.key{
+    box-sizing: border-box;
+    border-radius:0px;
+    background-color: transparent;
+}
+.key:hover{
+    background-color: #e5dcc2;
+}
